@@ -14,6 +14,7 @@ import torch.nn.functional as F
 train_dataset = datasets.USPS(root='./data', train=True, download=True, transform=transforms.ToTensor())
 test_dataset = datasets.USPS(root='./data', train=False, download=True, transform=transforms.ToTensor())
 
+print("Adding changes for new branch")
 if(torch.cuda.is_available()):
   device = "cuda"
 else:
